@@ -1,0 +1,105 @@
+@keyframes slideinLeft {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    border: 1px solid red;
+  }
+
+  to {
+    opacity: 1;
+    border: 10px dotted yellow;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(-50deg);
+  }
+  100% {
+    transform: rotate(75deg);
+  }
+}
+@keyframes growShrink {
+  0% {
+    font-size: 100%;
+    font-weight: 300;
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(2);
+    font-weight: 800;
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+    font-weight: 300;
+  }
+}
+
+h1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: slideinLeft;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+h2 {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: green;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+h3 {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background-color: green;
+  animation-name: shake;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+h4 {
+  /* width: 100%;
+  height: 100px; */
+  position: relative;
+  background-color: green;
+  animation-name: growShrink;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+div {
+  text-align: center;
+  overflow: hidden;
+}
